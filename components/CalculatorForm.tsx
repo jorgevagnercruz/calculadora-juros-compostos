@@ -56,13 +56,13 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
               type="number"
               value={interestRate}
               onChange={(e) => setInterestRate(e.target.value)}
-              className="flex-1 min-w-0 block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm bg-white"
+              className="flex-1 min-w-0 block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-white"
               placeholder="8"
             />
             <select
               value={rateType}
               onChange={(e) => setRateType(e.target.value as 'annual' | 'monthly')}
-              className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+              className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="annual">anual</option>
               <option value="monthly">mensal</option>
@@ -76,13 +76,13 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
               type="number"
               value={period}
               onChange={(e) => setPeriod(e.target.value)}
-              className="flex-1 min-w-0 block w-full px-3 py-2 rounded-l-md border border-r-0 border-gray-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm bg-white"
+              className="flex-1 min-w-0 block w-full px-3 py-2 rounded-l-md border border-r-0 border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-white"
               placeholder="1"
             />
             <select
               value={periodType}
               onChange={(e) => setPeriodType(e.target.value as 'years' | 'months')}
-              className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+              className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="years">ano(s)</option>
               <option value="months">meses</option>
@@ -93,7 +93,7 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
       <div className="flex items-center space-x-6">
         <button
           type="submit"
-          className="bg-red-800 text-white font-bold py-2 px-6 rounded-md hover:bg-red-900 transition-colors duration-300"
+          className="bg-blue-800 text-white font-bold py-2 px-6 rounded-md hover:bg-blue-900 transition-colors duration-300"
         >
           Calcular
         </button>

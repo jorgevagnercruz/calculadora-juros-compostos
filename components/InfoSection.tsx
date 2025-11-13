@@ -18,7 +18,7 @@ const comparisonData = [
 const InfoSection: React.FC = () => {
   return (
     <div className="mt-10 bg-white p-8 rounded-lg shadow-md border border-gray-200 prose max-w-none">
-      <h2 className="text-2xl font-bold text-red-800">Entendendo os Juros Compostos</h2>
+      <h2 className="text-2xl font-bold text-blue-800">Entendendo os Juros Compostos</h2>
       
       <h3 className="text-xl font-semibold text-gray-800 mt-6">Como usar a calculadora?</h3>
       <p>Utilizar nossa ferramenta para suas simulações financeiras é simples e intuitivo. Siga os passos:</p>

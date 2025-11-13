@@ -26,11 +26,11 @@ const ResultCard: React.FC<{ title: string; value: string; color: string }> = ({
 const CalculationResult: React.FC<CalculationResultProps> = ({ data }) => {
   return (
     <div className="mt-10">
-      <h2 className="text-2xl font-bold text-red-800 mb-6">Resultado da Simulação</h2>
+      <h2 className="text-2xl font-bold text-blue-800 mb-6">Resultado da Simulação</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <ResultCard title="Valor Final Bruto" value={formatCurrency(data.summary.finalBalance)} color="text-green-600" />
         <ResultCard title="Valor Investido" value={formatCurrency(data.summary.totalInvested)} color="text-blue-600" />
-        <ResultCard title="Total em Juros" value={formatCurrency(data.summary.totalInterest)} color="text-red-800" />
+        <ResultCard title="Total em Juros" value={formatCurrency(data.summary.totalInterest)} color="text-blue-800" />
       </div>
 
       <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8">
@@ -44,7 +44,7 @@ const CalculationResult: React.FC<CalculationResultProps> = ({ data }) => {
               <Tooltip formatter={(value) => formatCurrency(value as number)} />
               <Legend />
               <Line type="monotone" dataKey="invested" name="Valor Investido" stroke="#3b82f6" strokeWidth={2} dot={false} />
-              <Line type="monotone" dataKey="total" name="Total Acumulado" stroke="#991b1b" strokeWidth={2} dot={false} />
+              <Line type="monotone" dataKey="total" name="Total Acumulado" stroke="#1e40af" strokeWidth={2} dot={false} />
             </LineChart>
           </ResponsiveContainer>
         </div>
@@ -68,7 +68,7 @@ const CalculationResult: React.FC<CalculationResultProps> = ({ data }) => {
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{row.period}</td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">{formatCurrency(row.interest)}</td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600">{formatCurrency(row.totalInvested)}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-800">{formatCurrency(row.total)}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-blue-800">{formatCurrency(row.total)}</td>
                 </tr>
               ))}
             </tbody>

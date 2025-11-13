@@ -19,7 +19,7 @@ const InputGroup: React.FC<InputGroupProps> = ({ label, prefix, ...props }) => {
         </span>
         <input
           {...props}
-          className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md border border-gray-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm bg-white"
+          className="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-white"
         />
       </div>
     </div>

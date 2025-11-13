@@ -90,7 +90,7 @@ const App: React.FC = () => {
     <div className="bg-gray-50 min-h-screen text-gray-800 font-sans">
       <main className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
         <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
-          <h1 className="text-3xl font-bold text-red-800 mb-6">
+          <h1 className="text-3xl font-bold text-blue-800 mb-6">
             Simulador de Juros Compostos
           </h1>
           <CalculatorForm
